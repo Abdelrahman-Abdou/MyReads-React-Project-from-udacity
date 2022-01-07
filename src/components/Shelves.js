@@ -22,7 +22,7 @@ class Shelves extends Component {
     return (
       <div className="list-books-content">
         <div className="list-books-title">
-          <h1> MyReads </h1>
+          <h1> MyReadss </h1>
         </div>
         <div>
           {/* shelf Currently Reading */}
