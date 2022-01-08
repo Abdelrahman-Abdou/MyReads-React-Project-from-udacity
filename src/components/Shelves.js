@@ -22,23 +22,22 @@ class Shelves extends Component {
     return (
       <div className="list-books-content">
         <div className="list-books-title">
-          <h1> MyReadss </h1>
+          <h1> MyReads </h1>
         </div>
         <div>
-          {/* shelf Currently Reading */}
+          {/*Currently Reading */}
           <Shelf
             books={CurrentlyReading}
             ShelfTitle={"Currently Reading"}
             changeShelf={changeShelf}
           />
-          {/* shelf Want To Read*/}
+          {/* Want To Read*/}
           <Shelf
             books={wantToread}
             ShelfTitle={"Want To Read"}
             changeShelf={changeShelf}
           />
-          {/* //// */}
-          {/* shelf read */}
+          {/* Read */}
           <Shelf books={read} ShelfTitle={"Read"} changeShelf={changeShelf} />
         </div>
         <div className="open-search">

@@ -18,7 +18,7 @@ class Search extends Component {
     }
     if (query.length > 0) {
       BooksAPI.search(query.trim()).then((res) => {
-        //validating the API response before updating the state
+        //Validating the API response before updating the state
         if (!res.error) {
           const commoBooks = this.props.AllBooks.filter((o) =>
             res.some(({ id, title }) => o.id === id && o.title === title)
